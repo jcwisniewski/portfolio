@@ -15,14 +15,6 @@ export default function HomePage() {
       >
         <Apresentation />
         <Habilities />
-        {/* <Flex
-          bgColor="green.100"
-          display="flex"
-          top="0px"
-          position="fixed"
-          zIndex={"3"}
-          alignSelf="flex-end"
-        ></Flex> */}
       </Flex>
     </>
   );
