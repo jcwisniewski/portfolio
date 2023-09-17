@@ -3,6 +3,7 @@ import AvatarShape from "../components/Avatar/avatarShape";
 import Habilities from "@/components/Page2/Habilities";
 import Apresentation from "@/components/Page1/Apresentation";
 import MenuBar from "@/components/MenuBar/menuBar";
+import AboutMe from "@/components/Page3/AboutMe";
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
       >
         <Apresentation />
         <Habilities />
+        <AboutMe />
       </Flex>
     </>
   );
