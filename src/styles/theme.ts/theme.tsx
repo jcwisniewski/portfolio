@@ -160,7 +160,13 @@ export const defaultTheme = extendTheme({
   fontSizes: {
     menubar: "24px",
     title: "54px",
+    title2: "46px",
+    title3: "40px",
     subtitle: "15px",
+    subtitle2: "24px",
+    subtitle3: "21px",
+    subtitle4: "18px",
+    text1: "16px",
     text2: "14px",
     text3: "12px",
     text4: "10px",

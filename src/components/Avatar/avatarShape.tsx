@@ -3,7 +3,7 @@ import image from "../../../public/img/photo_of_julio.png";
 
 export default function AvatarShape() {
   return (
-    <Flex inset="250px" w="461px" h="373px">
+    <Flex w={"461px"} h={"367px"}>
       <Img src="/avatarShape.svg" />
     </Flex>
   );
