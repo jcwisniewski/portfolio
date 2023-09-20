@@ -141,7 +141,7 @@ const SendMeAMessage: React.FC = () => {
                 <Button
                   //here call function to change stage of hover
                   as={Link}
-                  href={`https://wa.me/5541995915693?text=Im+${name}.${text}.My+mail+is+${mail}`}
+                  href={`https://wa.me/5541995915693?text=Im+${name}.${text}.+Mail:+${mail}`}
                   _hover={{
                     transition: "width 0.5s",
                     width: "full",
