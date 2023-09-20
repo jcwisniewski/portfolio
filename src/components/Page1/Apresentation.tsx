@@ -3,6 +3,7 @@ import {
   Flex,
   Link,
   Spacer,
+  Stack,
   Text,
   useDisclosure,
 } from "@chakra-ui/react";
@@ -23,15 +24,17 @@ const Apresentation: React.FC = () => {
   return (
     <>
       <Flex w={"full"} h="full" flexDirection="column">
-        <Flex p="2rem" justifyContent={"space-between"}>
-          <Text fontWeight={"bold"} color="green.1" fontSize="menubar">
-            julio cesar
-          </Text>
-          <MenuBar isOpen={isOpen} onClose={onClose} onOpen={onOpen} />
+        <Flex p="2rem" position="fixed" zIndex={3}>
+          <Stack direction="row" spacing={[200, 600, 1000, 1650]}>
+            <Text fontWeight={"bold"} color="green.1" fontSize="menubar">
+              julio cesar
+            </Text>
+            <MenuBar isOpen={isOpen} onClose={onClose} onOpen={onOpen} />
+          </Stack>
         </Flex>
         <Flex display="column">
           <Text
-            p="2rem 0rem 2rem 2rem"
+            p="6rem 0rem 2rem 2rem"
             fontWeight={"bold"}
             color="green.1"
             fontSize={["title3", "title3", "title2", "title"]}
@@ -44,8 +47,8 @@ const Apresentation: React.FC = () => {
             color="white"
             fontSize={["subtitle4", "subtitle2"]}
           >
-            I like to craft solid and scalable frontend products with great user
-            experiences.
+            I have a passion for crafting robust and scalable solutions that
+            provide exceptional user experiences.
           </Text>
           <Flex
             justifyContent={[
@@ -63,8 +66,8 @@ const Apresentation: React.FC = () => {
                 color="white"
                 fontSize={["text3", "text3", "text2", "text1"]}
               >
-                Highly skiiled at progressive Enhancement, design systems & UI
-                Engineering..
+                Proficient in progressive enhancement, design systems, and UI
+                engineering, I bring a wealth of expertise to the table.
               </Text>
               <Text
                 p="2rem "
@@ -72,8 +75,8 @@ const Apresentation: React.FC = () => {
                 color="white"
                 fontSize={["text3", "text3", "text2", "text1"]}
               >
-                Proven experience building successful products for clients
-                across several countries.
+                My track record includes successfully delivering products for
+                clients.
               </Text>
             </Flex>
             <Flex

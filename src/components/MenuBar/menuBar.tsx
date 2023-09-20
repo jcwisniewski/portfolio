@@ -9,9 +9,12 @@ import {
   Button,
   Input,
   IconButton,
+  Flex,
 } from "@chakra-ui/react";
+import Link from "next/link";
 import React from "react";
 import { CiMenuFries } from "react-icons/ci";
+import { AiOutlineMail } from "react-icons/ai";
 
 type menuBarTypes = {
   onOpen: () => void;
@@ -48,17 +51,47 @@ export default function MenuBar({ onOpen, isOpen, onClose }: menuBarTypes) {
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-          <DrawerHeader>Create your account</DrawerHeader>
+          <DrawerHeader></DrawerHeader>
 
           <DrawerBody>
-            <Input placeholder="Type here..." />
+            <Flex
+              gap="2rem"
+              display={"flex"}
+              align={"start"}
+              direction="column"
+            >
+              <Button
+                target="_blank"
+                as={Link}
+                href="/work"
+                variant="link"
+                color="purple.1"
+              >
+                My work
+              </Button>
+              <Button
+                target="_blank"
+                as={Link}
+                href="https://www.linkedin.com/in/julio-cesar-de-oliveira-945723b9/"
+                variant="link"
+                color="purple.1"
+              >
+                My resume
+              </Button>
+            </Flex>
           </DrawerBody>
-
           <DrawerFooter>
-            <Button variant="outline" mr={3} onClick={onClose}>
-              Cancel
-            </Button>
-            <Button colorScheme="blue">Save</Button>
+            <Flex color="purple.1" direction="row" gap="1rem">
+              <AiOutlineMail />
+              <Button
+                as={Link}
+                href="mailto:julio.wisnieski@gmail.com"
+                variant="link"
+                color="purple.1"
+              >
+                sayhelloto@me.com
+              </Button>
+            </Flex>
           </DrawerFooter>
         </DrawerContent>
       </Drawer>

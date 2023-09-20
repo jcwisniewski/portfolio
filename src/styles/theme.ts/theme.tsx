@@ -146,9 +146,11 @@ export const defaultTheme = extendTheme({
 
     purple: {
       "1": "#4831D4",
+      "2": "#3D155F",
     },
     gray: {
       "1": "#A39696",
+      "2": "#F9F9F9",
     },
   },
 

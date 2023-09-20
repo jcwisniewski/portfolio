@@ -4,6 +4,9 @@ import Habilities from "@/components/Page2/Habilities";
 import Apresentation from "@/components/Page1/Apresentation";
 import MenuBar from "@/components/MenuBar/menuBar";
 import AboutMe from "@/components/Page3/AboutMe";
+import SeeMyWork from "@/components/Page4/SeeMyWork";
+import SendMeAMessage from "@/components/Page5/SendMeAMessage";
+import Footer from "@/components/Footer/footer";
 
 export default function HomePage() {
   return (
@@ -17,6 +20,9 @@ export default function HomePage() {
         <Apresentation />
         <Habilities />
         <AboutMe />
+        <SeeMyWork />
+        <SendMeAMessage />
+        <Footer />
       </Flex>
     </>
   );

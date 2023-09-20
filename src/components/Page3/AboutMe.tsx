@@ -39,12 +39,13 @@ const AboutMe: React.FC = () => {
             fontWeight={"Semibold"}
             fontSize="1.3rem"
           >
-            As a Systems Analyst/ Product Manager, my role is to support
-            projects and delegate tasks to my team. I work with technologies
-            like Git, Notion , AWS, Azure Devops, SQL, NoSQL, LSP in the Senior
-            system, G5 technology in the Senior system, API in Node.js and C#,
-            report development in the Senior system, data importers and
-            exporters, and Pentaho ETL.
+            I have worn many hats as a Systems Analyst and Product Manager. My
+            role revolves around project support and efficient task delegation
+            to my team. My toolkit includes a wide range of technologies such as
+            Git, Notion, AWS, Azure DevOps, SQL, NoSQL, LSP in the Senior
+            system, G5 technology in the Senior system, Node.js and C# APIs,
+            report development within the Senior system, data import and export
+            processes, as well as Pentaho ETL.
           </Text>
           <Text
             color="white"
@@ -52,13 +53,26 @@ const AboutMe: React.FC = () => {
             fontWeight={"Semibold"}
             fontSize="1.3rem"
           >
-            I analyze data, customize solutions, develop APIs, create reports,
-            and ensure smooth data integration. I lead the team, assign tasks,
-            and ensure project success.I currently work in the group of tire
-            sellers such Pneufree.com, RS Pneus and Pneuzão
+            My responsibilities span across data analysis, customized solutions,
+            API development, report generation, and ensuring seamless data
+            integration. I take the lead in team management, task assignment,
+            and ensuring the successful execution of projects. Currently, I am
+            actively involved with tire retailers such as Pneufree.com, RS
+            Pneus, and Pneuzão.
+          </Text>
+          <Text
+            color="white"
+            mt="1.5rem"
+            fontWeight={"Semibold"}
+            fontSize="1.3rem"
+          >
+            Beyond my managerial roles, Im a dedicated developer committed to
+            delivering tailor-made, high-quality solutions that cater to your
+            unique requirements. Whether you need customized software
+            development, API integration, or advanced report generation, I
+            possess the expertise to turn your concepts into reality.
           </Text>
         </Flex>
-
         <Img src="/iconThinking.svg" />
       </Flex>
     </>

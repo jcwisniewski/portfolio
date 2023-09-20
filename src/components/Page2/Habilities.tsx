@@ -17,11 +17,12 @@ export default function Habilities() {
           Design
         </Text>
         <Text color="gray.1" fontSize="text1" fontWeight="bold">
-          Im probably not the typical designer positioned behind an Illustrator
-          artboard adjusting pixels, but I design. Immersed in stylesheets
-          tweaking font sizes and contemplating layouts is where youll find me.
-          Im committed to creating fluent user experiences while staying
-          fashionable.
+          I might not fit the stereotypical image of a designer huddled behind
+          an Illustrator artboard fine-tuning pixels. My realm is within
+          stylesheets, adjusting font sizes, and contemplating layouts. My
+          commitment lies in creating seamless user experiences while keeping an
+          eye on the latest design trends. Im committed to creating fluent user
+          experiences while staying fashionable.
         </Text>
       </Flex>
       <Flex
@@ -33,10 +34,10 @@ export default function Habilities() {
           Engineering
         </Text>
         <Text color="gray.1" fontSize="text1" fontWeight="bold">
-          In building JavaScript applications, Im equipped with just the right
-          tools, and can absolutely function independently of them to deliver
-          fast, resilient solutions optimized for scale — performance and
-          scalabilty are priorities on my radar.
+          When it comes to developing JavaScript applications, I come
+          well-prepared with the right tools. Im equally comfortable working
+          independently or collaboratively to deliver speedy and robust
+          solutions that are optimized for scalability and performance.
         </Text>
       </Flex>
     </Flex>
