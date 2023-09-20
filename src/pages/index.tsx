@@ -11,6 +11,7 @@ import Footer from "@/components/Footer/footer";
 export default function HomePage() {
   return (
     <>
+      <link rel="icon" href="/favicon.ico" sizes="any" />
       <Flex
         direction="column"
         w="100vw"

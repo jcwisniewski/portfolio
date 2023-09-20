@@ -193,7 +193,7 @@ export const defaultTheme = extendTheme({
 
   styles: {
     global: {
-      body: { bg: "purple.1", color: "green.1" },
+      body: { bg: "white", color: "green.1" },
     },
   },
 });

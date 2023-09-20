@@ -3,6 +3,7 @@ import {
   Button,
   Flex,
   Input,
+  Link,
   Stack,
   Text,
   Textarea,
@@ -14,6 +15,7 @@ import { useSpring, animated } from "react-spring";
 import { PiArrowRightThin } from "react-icons/pi";
 import { useEffect, useState } from "react";
 import React from "react";
+import { useRouter } from "next/router";
 
 const SendMeAMessage: React.FC = () => {
   const props = useSpring({
@@ -28,10 +30,12 @@ const SendMeAMessage: React.FC = () => {
   const [colorText, setColorText] = useState<string>("gray.1");
   const [colorTextMail, setColorTextMail] = useState<string>("gray.1");
   const [colorTextArea, setColorTextArea] = useState<string>("gray.1");
-
   const [opacity, setOpacity] = useState<string>("50%");
   const [opacityEmail, setOpacityEmail] = useState<string>("50%");
   const [opacityTextArea, setOpacityTextArea] = useState<string>("50%");
+  const [name, setName] = useState<string>("");
+  const [mail, setMail] = useState<string>("");
+  const [text, setText] = useState<string>("");
 
   useOutsideClick({
     ref: ref,
@@ -54,6 +58,7 @@ const SendMeAMessage: React.FC = () => {
       setColorTextArea("gray.1");
     },
   });
+
   return (
     <>
       <animated.div style={props}>
@@ -96,6 +101,7 @@ const SendMeAMessage: React.FC = () => {
                       focusBorderColor="purple.1"
                       color="black"
                       variant="flushed"
+                      onChange={(e) => setName(e.currentTarget.value)}
                     />
                   </Flex>
                   <Flex direction={"column"}>
@@ -112,6 +118,7 @@ const SendMeAMessage: React.FC = () => {
                       focusBorderColor="purple.1"
                       color="black"
                       variant="flushed"
+                      onChange={(e) => setMail(e.currentTarget.value)}
                     />
                   </Flex>
                 </Flex>
@@ -129,9 +136,12 @@ const SendMeAMessage: React.FC = () => {
                   color="black"
                   variant="flushed"
                   placeholder=""
+                  onChange={(e) => setText(e.currentTarget.value)}
                 />
                 <Button
                   //here call function to change stage of hover
+                  as={Link}
+                  href={`https://wa.me/5541995915693?text=Im+${name}.${text}.My+mail+is+${mail}`}
                   _hover={{
                     transition: "width 0.5s",
                     width: "full",
@@ -144,8 +154,9 @@ const SendMeAMessage: React.FC = () => {
                   height="3rem"
                   width="70%"
                   bg="white"
+                  target="_blank"
                 >
-                  Send!! <PiArrowRightThin />
+                  Send <PiArrowRightThin />
                 </Button>
               </Stack>
             </Flex>
